@@ -1,0 +1,21 @@
+{
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"eslint.format.enable": true,	
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 1000,
+	"eslint.validate": [
+		"javascript"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"prettier.printWidth": 500,
+	"files.insertFinalNewline": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.tabSize": 2
+}
