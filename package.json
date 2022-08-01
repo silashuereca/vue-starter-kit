@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.ts,.vue src"
   },
   "dependencies": {
+    "@rollup/plugin-dynamic-import-vars": "^1.4.3",
     "vue": "^3.2.37"
   },
   "devDependencies": {
