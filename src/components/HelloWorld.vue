@@ -5,11 +5,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  setup(){
+  setup() {
     const message: string = "Hello, Vue Template";
     return {
-      message
-    }
-  }
-})
+      message,
+    };
+  },
+});
 </script>
