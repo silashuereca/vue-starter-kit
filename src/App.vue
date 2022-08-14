@@ -1,14 +1,16 @@
 <template>
-  <HelloWorld />
+  <AppLayoutWrapper>
+    <router-view />
+  </AppLayoutWrapper>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import AppLayoutWrapper from "./layouts/AppLayoutWrapper.vue";
 
 export default defineComponent({
   components: {
-    HelloWorld,
+    AppLayoutWrapper,
   },
 });
 </script>

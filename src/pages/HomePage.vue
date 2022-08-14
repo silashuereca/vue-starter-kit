@@ -6,7 +6,7 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   setup() {
-    const message: string = "Hello, Vue Template";
+    const message: string = "Hello, Home Page";
     return {
       message,
     };
