@@ -5,6 +5,8 @@
 
 `yarn dev`
 
+NOTE: should have `Node version 16+` installed on your computer
+
 ## Benefits from using this starter project
 1. Lots of time at the current company I work at worked on the propert eslint configurations that play nice with both Prettier and Eslint. Using this starter project saves you all the headache with that. Big shoutout to [Phil](https://github.com/philwhln) for helping out with this. He's a wizard at solving any problem you throw at him.
 2. Pinia store setup
