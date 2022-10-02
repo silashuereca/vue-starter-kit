@@ -1,5 +1,5 @@
-# Client Side Starter Project (Vue 3 + TypeScript + Vite)
-
+# Starter Project (Vue 3 + TypeScript + Vite)
+## Client Side (SSR version coming soon?)
 ## setup
 `yarn install`
 
