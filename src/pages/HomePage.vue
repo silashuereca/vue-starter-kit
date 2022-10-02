@@ -1,15 +1,13 @@
 <template>
-  <div> {{ message }} </div>
+  <StarterProject />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import StarterProject from "../components/StarterProject.vue";
 export default defineComponent({
-  setup() {
-    const message: string = "Hello, Home Page";
-    return {
-      message,
-    };
+  components: {
+    StarterProject,
   },
 });
 </script>

@@ -2,14 +2,14 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "home",
     component: () => import("../pages/HomePage.vue"),
     meta: {
       layout: "AppLayoutDefault",
     },
   },
-  // this always needs to be the last item in the array
+  // this always needs to be the last item in the array to catch any unknown routes
   {
     path: "/:pathMatch(.*)*",
     name: "not-found",
