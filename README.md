@@ -11,7 +11,7 @@
 3. Router setup with 404 page catch
 4. Testing for JS functions and Vue components with TypeScript make for even better quality testing practices
 5. TypeScript support/configuration
-6. Basic Git Action workflow setup to check for lintint/test errors
+6. Basic Git Action workflow setup to check for linting/test errors
 7. Basic overall folder/file architecture setup
 
 I hope this helps motivate you to build those side projects since all the boring/setup is taken care of for you :)
