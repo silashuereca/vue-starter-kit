@@ -12,8 +12,8 @@ import AppLayoutDefault from "./AppLayoutDefault.vue";
 export default defineComponent({
   name: "AppLayoutWrapper",
   setup() {
-    const route = useRoute();
-    const state = reactive({
+    const route: any = useRoute();
+    const state: any = reactive({
       layout: null,
     });
 
@@ -27,7 +27,6 @@ export default defineComponent({
         } catch {
           state.layout = shallowRef(AppLayoutDefault);
         }
-        console.log("Route Change", route);
       },
       {
         immediate: true,
