@@ -15,6 +15,7 @@ export default defineComponent({
     setActivePinia(pinia); //if I don't set this then the component test will fail (this needs further investigation as I shouldn't have to do this here since the instance has already been initiated in main.ts)
     const store: any = useCounterStore();
     const message: string = "Vue Starter Project";
+
     setInterval(() => {
       store.increment();
     }, 1000);
