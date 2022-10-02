@@ -1,0 +1,18 @@
+// Vitest Snapshot v1
+
+exports[`make sure elements are rendered correctly 1`] = `
+<div
+  data-v-b9c8eaea=""
+>
+  <p
+    data-v-b9c8eaea=""
+  >
+    Vue Starter Project
+  </p>
+  <p
+    data-v-b9c8eaea=""
+  >
+    0
+  </p>
+</div>
+`;
