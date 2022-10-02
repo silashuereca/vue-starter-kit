@@ -7,9 +7,12 @@
 
 <script lang="ts">
 import { defineComponent, computed } from "vue";
+import { createPinia, setActivePinia } from "pinia";
 import { useCounterStore } from "../stores/counter";
 export default defineComponent({
   setup() {
+    const pinia = createPinia();
+    setActivePinia(pinia); //if I don't set this then the component test will fail (this needs further investigation as I shouldn't have to do this here since the instance has already been initiated in main.ts)
     const store: any = useCounterStore();
     const message: string = "Vue Starter Project";
 

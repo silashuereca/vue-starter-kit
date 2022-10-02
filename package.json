@@ -7,6 +7,10 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "test": "vitest run",
+    "test-update": "vitest run test -u",
+    "test-ui": "vitest --ui",
+    "test-watch": "vitest --watch",
     "lint": "eslint --ext .js,.ts,.vue src",
     "lint-fix": "eslint --ext .js,.ts,.vue --fix src"
   },
@@ -18,8 +22,10 @@
     "@babel/core": "^7.18.9",
     "@babel/eslint-parser": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
+    "@types/jest": "^29.1.1",
     "@typescript-eslint/parser": "^5.31.0",
     "@vitejs/plugin-vue": "^3.0.0",
+    "@vue/test-utils": "^2.1.0",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest": "^26.7.0",
@@ -31,6 +37,7 @@
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
+    "vitest": "^0.23.4",
     "vue-router": "4",
     "vue-tsc": "^0.38.4"
   }

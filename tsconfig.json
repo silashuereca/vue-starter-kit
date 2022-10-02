@@ -6,5 +6,6 @@
     "esModuleInterop": true,
     "lib": ["ES2021.String"],
     "allowJs": true,
-  }
+    "types": ["@types/jest"]
+  },
 }
