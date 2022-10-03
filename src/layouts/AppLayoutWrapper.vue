@@ -9,6 +9,7 @@ import { defineComponent, shallowRef, watch, reactive } from "vue";
 import { useRoute } from "vue-router";
 
 import AppLayoutDefault from "./AppLayoutDefault.vue";
+// add more layout components here
 export default defineComponent({
   name: "AppLayoutWrapper",
   setup() {
@@ -19,11 +20,16 @@ export default defineComponent({
 
     watch(
       () => route,
-      (route) => {
+      (newRoute) => {
         //if route name doesn't exist then don't proceed as it will cause the route to fire twice which causes a flash of two different layouts
-        if (route.name) return;
+        if (!newRoute.name) return;
         try {
-          state.layout = shallowRef(AppLayoutDefault);
+          const layout = newRoute.meta.layout;
+          switch (layout) {
+            // add more layout components here
+            default:
+              state.layout = shallowRef(AppLayoutDefault);
+          }
         } catch {
           state.layout = shallowRef(AppLayoutDefault);
         }
